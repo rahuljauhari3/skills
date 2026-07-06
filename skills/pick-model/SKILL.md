@@ -1,11 +1,13 @@
 ---
 name: pick-model
-description: Decide which Claude model to use for a given coding task and how to route it (main session, /model, subagent, or workflow). Use when the user asks "which model should I use", wants to optimize cost vs. quality, or is about to kick off a task and hasn't specified a model.
+description: Advisory guidance (NOT an automatic router) on which Claude model fits a task and how to apply it — via /model, a subagent, or a workflow. It recommends; it cannot change your session's model by itself. Use when the user asks "which model should I use" or wants help balancing cost vs. quality. For true automatic per-request routing to cut costs, use an external proxy like claude-code-router instead.
 ---
 
 # Pick Model
 
-Help the user (or yourself) choose the right Claude model for a task, then route it the cheapest way that still hits the quality bar.
+Help the user (or yourself) choose the right Claude model for a task and apply it the cheapest way that still hits the quality bar.
+
+> **This skill only advises — it is not a router.** A skill cannot change the model your main session runs on. It can recommend running `/model`, delegating to a subagent on a specific model, or structuring a workflow. If you want automatic per-request routing to cut your bill (e.g. sending background/routine work to cheaper models), use an external proxy such as [`claude-code-router`](https://github.com/musistudio/claude-code-router) — that operates below Claude Code and actually switches models per request.
 
 ## Current models (2026)
 
