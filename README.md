@@ -7,6 +7,7 @@ A collection of [agent skills](https://skills.sh) for Claude Code and other AI c
 | Skill | What it does |
 |---|---|
 | [`pick-model`](./skills/pick-model) | Decide which Claude model (Opus / Sonnet / Haiku) fits a task and how to route it (session, subagent, or workflow) for the best cost/quality tradeoff. |
+| [`review-leetcode`](./skills/review-leetcode) | Review your own LeetCode attempt (problem URL + your code) — finds correctness/complexity issues, shows the fix, suggests the optimal approach, and lists concepts to study. |
 
 ## Install
 
