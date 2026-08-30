@@ -72,18 +72,38 @@ in this order. Skip a section only where noted below.
    solution is already correct and optimal, say so plainly here instead of
    manufacturing issues.
 
-3. **How to fix** — A concrete, code-level fix for each issue from section 2.
-   Show the corrected code (or the specific lines to change), not just a
-   description of what's wrong. **Skip this section entirely** if the original
-   approach was already correct and optimal — there's nothing to fix.
+3. **How to fix** — A concrete, code-level fix for each issue from section 2,
+   applied as a patch to the user's *own* code — same structure, same variable
+   names, same overall approach/algorithm. Change only what's needed to make
+   each identified bug go away; do not restructure, rename, simplify, or swap
+   in a different algorithm here, even if you know a better one — that belongs
+   in section 4, not this one. Show the corrected code (or the specific lines
+   to change). **Skip this section entirely** if the original approach was
+   already correct and optimal — there's nothing to fix.
 
 4. **Optimization / better approach** — Starting from the fixed version, explain
    how it could be optimized further, and what the ideal approach to this
    problem would have been (the one an experienced solver would reach for).
+   This is the section where redesigns, different data structures, or a
+   different algorithm belong — keep that reasoning out of section 3. Do not
+   hold back on rewriting the user's code here — freely restructure, swap
+   algorithms/data structures, or drop lines entirely if a better approach
+   doesn't need them.
    If the fixed solution is already optimal, don't invent a fake alternative —
    instead use this section to describe other valid approaches for breadth
    (e.g., a different paradigm that also achieves the optimal complexity, with
    its own tradeoffs), so the user sees the solution space isn't a single path.
+
+   Whenever the user asks specifically to improve/optimize their code (in
+   these words or others), in addition to the written explanation, call
+   `mcp__visualize__show_widget` with a before/after diagram that visually
+   points at the bottleneck section(s) of *their actual code* (quote the real
+   lines, not a paraphrase) and shows what replaces it — e.g. a box around the
+   slow snippet on the left, an arrow, a box with the faster replacement on the
+   right, annotated with the complexity change (`O(n^2) -> O(n)`). Call
+   `mcp__visualize__read_me` with `modules: ["diagram"]` first if the module's
+   conventions aren't already loaded this session. Keep this diagram in
+   addition to, not instead of, the code block in the written explanation.
 
 5. **Concepts to learn** — A short list of the underlying patterns/topics this
    problem draws on (e.g., "sliding window", "monotonic stack", "union-find").
