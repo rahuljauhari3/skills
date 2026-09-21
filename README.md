@@ -10,6 +10,8 @@ A collection of [agent skills](https://skills.sh) for Claude Code and other AI c
 | [`review-leetcode`](./skills/review-leetcode) | Review your own LeetCode attempt (problem URL + your code) — finds correctness/complexity issues, shows the fix, suggests the optimal approach, and lists concepts to study. |
 | [`humanizer`](./skills/humanizer) | Rewrite AI-sounding text so it reads naturally without changing what it says. From [blader/humanizer](https://github.com/blader/humanizer). |
 | [`tailor-resume`](./skills/tailor-resume) | Tailor a resume to a job description from a persistent "experience bank" of what you've actually done — gap analysis first, then a one-page LaTeX resume. Never invents experience. |
+| [`ats-resume-check`](./skills/ats-resume-check) | Scan a resume the way an ATS parser and a resume scorer would — Readability, Credibility, ATS Fit, and Format — and get a color-coded report with action items. |
+| [`scout-oss`](./skills/scout-oss) | Find real open-source contribution opportunities across major ML and data repos, then clone, reproduce, and confirm a fix locally before recommending you open a PR. |
 
 ## Install
 
