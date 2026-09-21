@@ -122,10 +122,12 @@ trace back to a specific line on the alignment map:
   cluster in each section. Order is a free signal for a reviewer skimming in
   a few seconds — don't leave it as an afterthought.
 
-Every entry already in the bank goes into the tailored resume — this skill
-reorders and rewords for relevance, it does not cut or omit for length. If
-the user separately asks you to trim for a page limit, treat that as a
-distinct, explicit follow-up request, not something to do proactively here.
+By default every entry already in the bank goes into the tailored resume —
+this skill reorders and rewords for relevance, it does not cut or omit for
+length. The exception is a standing page limit in the user's own
+`resume-tailoring-instructions.md`: if they have one, honor it, select the
+strongest entries for this JD, and say in the report what you left out and
+why. Absent such a rule, treat trimming as a separate explicit request.
 
 ### 3. Surface gaps, don't fabricate them
 
@@ -153,7 +155,7 @@ Inside it, save:
   after the posting is taken down.
 - The gap-analysis report as markdown.
 
-Present the report to the user and stop here — do not generate the docx yet.
+Present the report to the user and stop here. Do not generate the resume yet.
 
 ### 5. On approval, generate the tailored resume
 
